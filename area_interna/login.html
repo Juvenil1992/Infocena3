@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="../estilos/estilo.css" />
 </head>
 <body>
     <a href="../index.html">Voltar para a página principal</a>
+<H1>Área de Login</H1>
 
     <form method="post" 
-        action="http://localhost:82/exemplo/processa_formulario.php">
+       action="http://localhost:82/exemplo/processa_formulario.php">
         <div>
-            <label for="login">Login para entrar</label>
+            <label for="login">Login</label>
             <input type="text" placeholder="Login" id="login"
                 name="login" /> 
         </div>
         <div>    
             <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" />
+            <input type="password" placeholder="Senha" id="senha" name="senha" />
         </div>
         <div>
             <input type="submit" value="Entrar no sistema" />
