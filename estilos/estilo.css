@@ -4,6 +4,7 @@ body{
 }
 
 h1 {
+    margin-top: 5px !important;
     color:rgb(0, 0, 0);
     text-align: center;
     background-color: rgb(86, 134, 238);
@@ -22,10 +23,10 @@ img{
 
 }
 div{
-   margin: 20px 30px ;
+   /* padding-top: 10px; */
 }
 label{
-    margin-left: 0 px;
+   /* margin-left: 0 px; */
     
 
 }
@@ -58,19 +59,20 @@ label{
 }
 
 .campo{
-    font-size: 20px;
+    /*font-size: 20px;
     padding: 5px 150px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);*/
     
 }
 
 select{ 
-    font-size: 20px;
+    /*font-size: 20px;
     padding: 5px 150px;
-    background-color: rgb(50, 174, 205);
+    background-color: rgb(50, 174, 205);*/
 }
 
-.menu a {
+.menu li {
+    margin-top: 5px;
     border: solid 2px;
     box-shadow: 2px 2px 2px black;
     padding: 10px;
@@ -78,4 +80,29 @@ select{
     border-radius: 50px;
     color: black;
     
+}
+.menu li:hover{
+    background-color: #688f85;
+}
+.container{
+    background-color: #688f85;
+    background-image: url('../imagens/fundo-claro.jfif') ;
+}
+
+.btn-primary{
+    background-color: aqua;
+}
+.botao_estiloso{
+    background-color: #4c5baf !important; 
+    color: #fff !important;
+    transition: 1s !important;
+
+}
+.botao_estiloso:hover{
+    background-color: aqua !important;
+}
+
+form{
+    margin-top: 50px;
+    padding-bottom: 50px;
 }

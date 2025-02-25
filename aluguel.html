@@ -10,55 +10,68 @@
     
 </head>
 <body>
-    <div class = container>
+    
+    <div class = "container">
+        <nav class = "menu">
+            <ul class="nav">
+               <li class="nav-item"><a href="area_interna/login.html">Login</a></li>
+               <li class="nav-item"><a href="quem_somos.html">Quem somos</a></li>
+               <li class="nav-item"><a href="aluguel.html">Alugue sua loja</a></li>
+               <li class="nav-item"><a href="lojas.html">Lojas</a> </li>
+               <li class="nav-item"><a href="produtos.html">Produtos</a></li> 
+               <li class="nav-item"><a href="fale_conosco.html">Fale Conosco</a></li>
+               <li class="nav-item"><a href="http://rj.senac.br" target="_blank">SENAC</a></li>
+           </ul>
+        </nav>
     <form method="post"
         action="http://localhost:82/exemplo/processa_aluguel.php">
         
         <div class = "row">
-            <div class="col-xl-5">
-            <label for="nome" class="diferente">Nome</label>
-            <input type="text" id="nome"  class="campo"
+            <div class="col-md-5">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome"  class="form-control"
                 name="nome" required /><span>*</span>
         
         </div>
-            <div class = "col-xl-5">
-            <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" name="telefone" class="campo" />
+            <div class = "col-md-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="text" id="telefone" name="telefone" class="form-control" />
             </div>
-            
-            
-            <div class = "col-xl-5">
-            <label for="email" class="diferente">E-mail</label>
-            <input type="email" id="email" name="email" required class="campo"  /><span>*</span>
+        </div>
+        <div class = "row">
+            <div class = "col-md-5">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" name="email" required class="form-control"  /><span>*</span>
          </div>
-         <div class = "col-xl-5">
-            <label for="cidade">Cidade de origem</label>
-            <select name="cidade" class="campo">
+         <div class = "col-md-3">
+            <label for="cidade" class="form-label">Cidade de origem</label>
+            <select name="cidade" class="form-select">
                 <option>Selecione a cidade</option>
                 <option>Rio de Janeiro</option>
                 <option>Nova Iguaçu</option>
                 <option>São João de Meriti</option>
             </select>
-        
+        </div>
            </div>
         <div>
-            <label>Tipo de locação</label>
-            <input type="radio" name="tipo" value="Loja"/>
-            <label>Loja</label>
-            <input type="radio" name="tipo" value="Stand" />
-            <label>Stand</label>
+            <label class="form-label">Tipo de locação</label>
+            <input type="radio" name="tipo" value="Loja" class="form-check-input"/>
+            <label class="form-label">Loja</label>
+            <input type="radio" name="tipo" value="Stand" class="form-check-input" />
+            <label class="form-label">Stand</label>
         </div>
 
         <div>
-            <label for="comentario">Comentário</label>
+            <label for="comentario" class="form-label">Comentário</label>
             <textarea id="comentario" name="comentario" 
             cols="100" rows="10"></textarea>
         </div>
         <div>
-            <input type="submit" value="Enviar" class = "encaminhar"/>
-            <input type="reset" value="Limpar" class ="resetar"/>
+            <input type="submit" value="Enviar" class = "btn-primary"/>
+            <input type="reset" value="Limpar" class ="btn-primary"/>
+            <input type="button" value="ok"   class ="botao_estiloso"/>
         </div>
-    </div>
+    
     </form>
     <a href="index.html">Voltar para a página principal</a>
  </div>
