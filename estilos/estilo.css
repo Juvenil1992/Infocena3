@@ -71,7 +71,7 @@ select{
     background-color: rgb(50, 174, 205);*/
 }
 
-.menu li {
+/*.menu li {
     margin-top: 5px;
     border: solid 2px;
     box-shadow: 2px 2px 2px black;
@@ -80,10 +80,10 @@ select{
     border-radius: 50px;
     color: black;
     
-}
-.menu li:hover{
+}*/
+/*.menu li:hover{
     background-color: #688f85;
-}
+}*/
 .container{
     background-color: #688f85;
     background-image: url('../imagens/fundo-claro.jfif') ;
@@ -106,3 +106,11 @@ form{
     margin-top: 50px;
     padding-bottom: 50px;
 }
+.iconmenu{
+
+    height: 100px;
+    width: 100;
+
+
+}
+
